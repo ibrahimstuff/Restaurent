@@ -1,0 +1,61 @@
+page-login {
+#login {
+    background: color($colors, primary);
+    position: relative;
+    min-height: 100%;
+    font-family: 'Raleway', sans-serif;
+
+    h1 {
+        color: #ffffff;
+        font-size: 32px;
+        margin: 8% 0 5% 10%;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 16px;
+        margin: 5% 0 40% 10%;
+        color: #ffffff;
+        font-weight: 100;
+    }
+    .text {
+        font-size: 12px;
+    }
+    .border {
+        border-radius: 3px;
+    }
+    .forget {
+        position: relative;
+    }
+    .forget > a {
+        position: absolute;
+        right: 20px;
+        color: color($colors, light);
+        text-decoration: none;
+        bottom: 15px;
+    }
+    // ion-item.input-has-focus ion-label[floating] ion-icon,
+    // ion-item.input-has-value ion-label[floating] ion-icon {
+    //     display: none;
+    // }
+
+    // .item-inner {
+    //     margin: 0;
+    // }
+    footer {
+        color: #f5cde5;
+        font-size: 14px;
+        position: fixed;
+        bottom: 4%;
+        left: 2%;
+        right: 2%;
+    }
+    footer > a {
+        color: #FFFFFF;
+        font-weight: 700;
+    }
+    .form {
+        background: color($colors, clean);
+        border-radius: 3px;
+    }
+}
+}
