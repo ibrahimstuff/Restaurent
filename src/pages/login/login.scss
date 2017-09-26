@@ -1,7 +1,6 @@
 page-login {
 #login {
     background: color($colors, primary);
-    position: relative;
     min-height: 100%;
     font-family: 'Raleway', sans-serif;
 
@@ -44,10 +43,7 @@ page-login {
     footer {
         color: #f5cde5;
         font-size: 14px;
-        position: fixed;
-        bottom: 4%;
-        left: 2%;
-        right: 2%;
+        padding: 10%;
     }
     footer > a {
         color: #FFFFFF;
@@ -56,6 +52,12 @@ page-login {
     .form {
         background: color($colors, clean);
         border-radius: 3px;
+    }
+    .list-ios > .item-block:first-child {
+        border-width: 0;
+    }
+    .list-ios > .item-block:last-child {
+        border-bottom: 0.55px solid #c8c7cc
     }
 }
 }

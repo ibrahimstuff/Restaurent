@@ -6,14 +6,18 @@
   </h2>
   
   <div class="form" margin>
-    <ion-item class="form">
-      <ion-icon name="mail" color="light" item-start small></ion-icon>
-      <ion-input class="text" no-margin type="text" placeholder="EMAIL OR MOBILE"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="key" color="light" item-start small></ion-icon>
-      <ion-input class="text" no-margin type="password" placeholder="PASSWORD"></ion-input>
-    </ion-item>
+    <ion-list margin>
+      <ion-item>
+        <ion-icon name="mail" color="light" item-start small></ion-icon>
+        <ion-input class="text" no-margin type="text" placeholder="EMAIL OR MOBILE"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-list margin>
+      <ion-item>
+        <ion-icon name="key" color="light" item-start small></ion-icon>
+        <ion-input class="text" no-margin type="password" placeholder="PASSWORD"></ion-input>
+      </ion-item>
+    </ion-list>
     <div padding>
         <button class="border" ion-button color="secondary" full (click)="login()">Login</button>
     </div>
