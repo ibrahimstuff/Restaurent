@@ -8,14 +8,14 @@
   <div class="form" margin>
     <ion-list margin padding-top>
       <ion-item>
-        <ion-icon name="mail" color="light" item-start small></ion-icon>
-        <ion-input class="text" no-margin type="text" placeholder="EMAIL OR MOBILE"></ion-input>
+        <ion-icon name="mail" [ngClass]="{'light' : !Micon, 'secondary' : Micon}" item-start small></ion-icon>
+        <ion-input class="text" no-margin type="text" placeholder="EMAIL OR MOBILE" (focus)="Micon=true" (blur)="Micon=false"></ion-input>
       </ion-item>
     </ion-list>
     <ion-list margin-bottom margin-right margin-left>
       <ion-item>
-        <ion-icon name="key" color="light" item-start small></ion-icon>
-        <ion-input class="text" no-margin type="password" placeholder="PASSWORD"></ion-input>
+        <ion-icon name="key" [ngClass]="{'light' : !Picon, 'secondary' : Picon}" item-start small></ion-icon>
+        <ion-input class="text" no-margin type="password" placeholder="PASSWORD" (focus)="Picon=true" (blur)="Picon=false"></ion-input>
       </ion-item>
     </ion-list>
     <div padding-bottom padding-left padding-right>

@@ -9,7 +9,9 @@ import { TabsPage } from './../tabs/tabs';
   templateUrl: 'login.html',
 })
 export class LoginPage {
-
+  
+  Micon = false;
+  Picon = false;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -21,4 +23,11 @@ export class LoginPage {
     this.navCtrl.push(TabsPage);
   }
 
+  high() {
+    // this.icon = true;
+  }
+
+  low() {
+    // this.icon = false;
+  }
 }

@@ -1,17 +1,27 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar text-center color="primary">
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content padding id="home">
+
+  <section text-center>
+      <a href="#">
+        <img src="../assets/img/QR.png" alt="QR Code" />
+        <h2>Scan QR Code</h2>
+      </a>
+  </section>
+
+  <section text-center>
+    <a href="#">
+      <img src="../assets/img/Code.png" alt="Code" />
+      <h2>Enter Code</h2>
+    </a>
+  </section>
+  <div text-center>
+    <ion-icon name="heart-outline" color="pinky" item-start small></ion-icon>
+    <a href="#">View faviourite Restaurants</a>
+  </div>
+  
 </ion-content>
