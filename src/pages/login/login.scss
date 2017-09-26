@@ -53,11 +53,15 @@ page-login {
         background: color($colors, clean);
         border-radius: 3px;
     }
+    // .list-ios > .item-block:first-child {
+    //     border-width: 0;
+    // }
+    // .list-ios > .item-block:last-child {
+    //     border-bottom: 0.55px solid #c8c7cc
+    // }
+
     .list-ios > .item-block:first-child {
-        border-width: 0;
-    }
-    .list-ios > .item-block:last-child {
-        border-bottom: 0.55px solid #c8c7cc
+        border-top: none;
     }
 }
 }
