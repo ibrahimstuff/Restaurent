@@ -7,14 +7,15 @@
 <ion-content padding id="home">
 
   <section text-center>
-      <a href="#">
+      <!-- <a href="#" [navPush]="QRCodePage"> -->
+      <a href="#" (click)="scanCode()">
         <img src="assets/img/QR.png" alt="QR Code" />
         <h2>Scan QR Code</h2>
       </a>
   </section>
 
   <section text-center>
-    <a href="#">
+    <a href="#" [navPush]="EnterPinPage">
       <img src="assets/img/Code.png" alt="Code" />
       <h2>Enter Code</h2>
     </a>

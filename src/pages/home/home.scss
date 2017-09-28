@@ -7,10 +7,12 @@ page-home {
     section > a {
         text-decoration: none;
         color : #000000;
+        display: block;
+        padding-top: 10px; 
     }
     section > a > * {
         margin: 0px;
-        font-size: 22px;
+        font-size: 18px;
         padding: 10px;
     }
     div > a {
