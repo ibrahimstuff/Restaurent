@@ -16,7 +16,8 @@ import { EnterPinPage } from './../pages/enter-pin/enter-pin';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Camera } from '@ionic-native/camera';
-import { QRScanner } from '@ionic-native/qr-scanner';
+// import { QRScanner } from '@ionic-native/qr-scanner';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,7 @@ import { QRScanner } from '@ionic-native/qr-scanner';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     Camera,
-    QRScanner
+    BarcodeScanner
   ]
 })
 export class AppModule {}
