@@ -26,7 +26,7 @@ export class QrCodePage {
   }
 
   ionViewWillLeave() {
-    // this.tabBarEle.style.display = 'flex';
+    this.tabBarEle.style.display = 'flex';
   }
 
   goCart() {

@@ -52,7 +52,7 @@ export class EnterPinPage implements AfterViewInit{
   }
 
   ionViewWillLeave() {
-    // this.tabBarEle.style.display = 'flex';
+    this.tabBarEle.style.display = 'flex';
   }
 
 
