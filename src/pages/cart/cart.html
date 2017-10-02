@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>CART</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content id="cart">
+  <ion-card *ngFor="let item of items; let i=index">
+      <ion-item>
+        <img class="item-img" [src]="item.img" alt="img" item-left/>
+        <h2>{{item.name}}</h2>
+        <a href="#" class="add">
+          <img src="assets/img/remove.png"/>
+          <span>{{item.add}}</span>
+          <img src="assets/img/add.png"/>
+        </a>
+        <span class="price">${{item.price}}</span>
+      </ion-item>
+  </ion-card>
+
+</ion-content>

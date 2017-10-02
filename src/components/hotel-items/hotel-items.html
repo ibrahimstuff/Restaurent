@@ -1,0 +1,21 @@
+<div class="hotels">
+<ul>
+  <li><a href="#" class="active">Breakfast</a></li>
+  <li><a href="#">Lunch</a></li>
+  <li><a href="#">Dinner</a></li>
+  <li><a href="#">Snacks</a></li>
+</ul>
+<div class="items-list">
+  <ion-card *ngFor="let item of items; let i=index">
+    <ion-item>
+      <img class="item-img" [src]="item.img" alt="img" item-left/>
+      <h2>{{item.name}}</h2>
+      <a href="#" class="add">
+        <span>Add </span>
+        <img src="assets/img/add.png"/>
+      </a>
+      <span class="price">${{item.price}}</span>
+    </ion-item>
+  </ion-card>
+</div>
+</div>

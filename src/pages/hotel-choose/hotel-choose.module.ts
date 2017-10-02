@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { QrCodePage } from './qr-code';
+import { QrCodePage } from './hotel-choose';
+
 
 @NgModule({
   declarations: [

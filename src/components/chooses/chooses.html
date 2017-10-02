@@ -1,0 +1,25 @@
+<ion-card class="booking" margin-top>
+  <div margin-top margin-right margin-left>
+    <h1>Booking Options</h1>
+    <span><span class="highlight"></span></span>
+  </div>
+  <a href="#" class="take" (click)="onChange(true)">
+    <ion-icon class="take-icon" ios="ios-pizza" md="md-pizza" color="secondary" item-start></ion-icon>
+    <span class="text" no-margin >Take away</span>
+  </a>
+  <a href="#" class="take"(click)="dineIn=!dineIn">
+      <ion-icon class="take-icon" ios="ios-pizza" md="md-pizza" color="secondary" item-start></ion-icon>
+      <span class="text" no-margin >Dining</span>
+      <ion-icon [hidden]="dineIn" class="checked" name="checkmark" color="pinky"></ion-icon>
+  </a>
+</ion-card>
+<div class="dine-in" [hidden]="dineIn">
+  <div>
+    <ion-item class="table-choose">
+      <ion-input no-margin type="Number" placeholder="ENTER TABLE NUMBER"></ion-input>
+    </ion-item>
+  </div>
+  <div padding-bottom padding-left padding-right margin-top>
+    <button class="border" ion-button color="secondary" full (click)="onChange(true)">Continue</button>
+  </div>
+</div>

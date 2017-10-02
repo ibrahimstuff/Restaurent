@@ -1,0 +1,25 @@
+<ion-header hide-tabs>
+
+  <ion-navbar color="primary">
+    <ion-title>McDonalds</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <img src="assets/img/mc.jpg" alt="MC" class="hotel-image"/>
+  <div [hidden]="booking">
+    <chooses (Booking)="booking=$event"></chooses>
+  </div>
+  <div [hidden]="!booking">
+      <hotel-items></hotel-items>
+  </div>
+  <div class="cart">
+    <div class="total">
+      <span>3 Items</span>
+      <span>$112</span>
+    </div>
+    <button (click)="goCart()">VIEW CART</button>
+  </div>
+</ion-content>

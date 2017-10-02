@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { QrCodePage } from '../qr-code/qr-code';
+import { QrCodePage } from '../hotel-choose/hotel-choose';
 import { EnterPinPage } from '../enter-pin/enter-pin';
 // import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
