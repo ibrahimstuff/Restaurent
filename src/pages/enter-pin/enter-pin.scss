@@ -13,6 +13,14 @@ page-enter-pin {
         margin-left: 4%;
         font-size: 20px;
         font-weight: 700;
+        color: color($colors, dark);
+      }
+
+      form > input {
+        width: 10px;
+        border: 0;
+        border-bottom: 1px solid #000;
+        margin: 0 5px;
       }
 
 }

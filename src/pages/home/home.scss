@@ -6,7 +6,7 @@ page-home {
     }
     section > a {
         text-decoration: none;
-        color : #000000;
+        color : color($colors, dark);
         display: block;
         padding-top: 10px; 
     }

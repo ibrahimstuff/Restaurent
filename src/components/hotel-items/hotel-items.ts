@@ -39,6 +39,16 @@ export class HotelItemsComponent {
       img: "assets/img/burger.png",
       name: "Mutton Fried Burger",
       price: "13"
+    },
+    {
+      img: "assets/img/burger.png",
+      name: "Mutton Fried Burger",
+      price: "13"
+    },
+    {
+      img: "assets/img/burger.png",
+      name: "Mutton Fried Burger",
+      price: "13"
     }
   ]
   }

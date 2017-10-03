@@ -32,10 +32,10 @@ export class EnterPinPage implements AfterViewInit{
 
     console.log('ionViewDidLoad EnterPinPage');
     setTimeout(() => {
-      var input = <HTMLInputElement>document.getElementById('partitioned');
-      console.log("Input :",input);
-      input.focus();  
-      this.keyboard.show(); // for android
+      // var input = <HTMLInputElement>document.getElementById('partitioned');
+      // console.log("Input :",input);
+      // input.focus();  
+      // this.keyboard.show(); // for android
       // this.vc.setFocus();
     },150); //a least 150m
     // document.getElementById("partitioned").focus();
@@ -54,10 +54,17 @@ export class EnterPinPage implements AfterViewInit{
   ionViewWillLeave() {
     this.tabBarEle.style.display = 'flex';
   }
-
-
   pinSub() {
     this.navCtrl.push(QrCodePage);
   }
+  test1(event) {
+    //event.target.next().focus();
+    console.log(event);
+  }
+  ValidatePassKey(tb) {
+    console.log(tb.target.value.length)
+    if (tb.target.value.length >= 1)
+      document.getElementById(tb.target.id + 1).focus();
+    }
+  }
 
-}

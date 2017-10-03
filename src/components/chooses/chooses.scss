@@ -26,7 +26,7 @@ chooses {
         display: block;
     }
     .take > span {
-        color: #000;
+        color: color($colors, dark);;
         display: inline-block;
         vertical-align: middle;
         padding-left: 10px;
