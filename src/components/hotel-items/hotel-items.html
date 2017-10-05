@@ -9,12 +9,13 @@
   <ion-card *ngFor="let item of items; let i=index">
     <ion-item>
       <img class="item-img" [src]="item.img" alt="img" item-left/>
-      <h2>{{item.name}}</h2>
+      <h2 class="name">{{item.name}}</h2>
+      <a href="#" *ngIf="item.custom" class="custom" (click)="custom()">Customize</a>
       <a href="#" class="add">
         <span>Add </span>
         <img src="assets/img/add.png"/>
+        <span class="price">${{item.price}}</span>
       </a>
-      <span class="price">${{item.price}}</span>
     </ion-item>
   </ion-card>
 </div>

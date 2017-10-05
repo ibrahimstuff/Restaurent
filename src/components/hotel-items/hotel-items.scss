@@ -49,11 +49,21 @@ hotel-items {
     .item-img {
         width: 20%;
     }
+    .name {
+        display: inline-block;
+    }
+    .custom {
+        display: inline-block;
+        float: right;
+        font-size: 12px;
+        color: #3847CC;
+    }
     .add {
         color: #ff792e;
         text-decoration: none;
         vertical-align: middle;
         font-size: 14px;
+        display: block;
     }
     .add > img {
         width: 10%;
@@ -66,5 +76,7 @@ hotel-items {
     .price {
         float: right;
         font-weight: 600;
+        font-size: 18px;
+        color: color($colors, dark);
     }
 }

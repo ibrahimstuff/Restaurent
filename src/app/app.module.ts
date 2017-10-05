@@ -14,6 +14,7 @@ import { EnterPinPage } from './../pages/enter-pin/enter-pin';
 import { ChoosesComponent } from './../components/chooses/chooses';
 import { HotelItemsComponent } from './../components/hotel-items/hotel-items';
 import { CartPage } from './../pages/cart/cart';
+import { CustomItemPage } from '../pages/custom-item/custom-item';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -36,7 +37,8 @@ import { Keyboard } from '@ionic-native/keyboard';
     EnterPinPage,
     ChoosesComponent,
     HotelItemsComponent,
-    CartPage
+    CartPage,
+    CustomItemPage
   ],
   imports: [
     BrowserModule,
@@ -53,7 +55,8 @@ import { Keyboard } from '@ionic-native/keyboard';
     SignupPage,
     QrCodePage,
     EnterPinPage,
-    CartPage
+    CartPage,
+    CustomItemPage
   ],
   providers: [
     StatusBar,

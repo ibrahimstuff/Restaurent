@@ -16,11 +16,15 @@ page-enter-pin {
         color: color($colors, dark);
       }
 
-      form > input {
-        width: 10px;
-        border: 0;
-        border-bottom: 1px solid #000;
-        margin: 0 5px;
+      // form > input {
+      //   width: 10px;
+      //   border: 0;
+      //   border-bottom: 1px solid #000;
+      //   margin: 0 5px;
+      // }
+      .close {
+        margin-left: 5px;
+        font-size: 20px;
       }
 
 }
