@@ -15,8 +15,12 @@ import { CustomItemPage } from '../../pages/custom-item/custom-item';
 export class HotelItemsComponent {
 
   items: any;
+  Breakfast: boolean;
+  Lunch: boolean;
 
   constructor(private navctrl: NavController) {
+    this.Breakfast = true;
+    this.Lunch = false;
     this.items = [{
       img: "assets/img/burger.png",
       name: "Mutton Fried Burger",
@@ -65,5 +69,12 @@ export class HotelItemsComponent {
   custom() {
     this.navctrl.push(CustomItemPage);
   }
-
+  breakfast() {
+    this.Breakfast = false;
+    this.Lunch = true;
+  }
+  lunch() {
+    this.Lunch = true;
+    this.Breakfast = false;
+  }
 }

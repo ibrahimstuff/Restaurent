@@ -3,6 +3,67 @@ page-custom-item {
         margin-left: 5px;
         font-size: 20px;
       }
+    .header > h1 {
+        display: inline-block;
+        font-size: 18px;
+        color: color($colors, dark);
+        padding: 15px 0 0 15px;
+        margin: 0px; 
+        font-weight: 400;       
+    }
+    .header > h2 {
+        display: inline;
+        float: right;
+        padding: 15px 15px 0 0;
+        font-size: 18px;
+    }
+    .header > p {
+        margin: 0px;
+        padding: 15px 15px 15px 15px;
+        color:#969696;
+    }
+    .select {
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 100%;
+    }
+    h1 {
+        margin: 0px;
+        padding: 0px;
+    }
+    h2 {
+        margin: 0px;
+        padding: 0px;
+    }
+    .select > h1 {
+        text-transform: uppercase;
+        color: color($colors, dark);
+        padding: 10px 15px 10px 15px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .select > ul {
+        background-color: #FFFFFF;
+        list-style: none;
+        margin: 0px;
+        padding: 10px 0 0 15px;
+    }
+    .select li {
+        border-bottom: 1px solid #A8A8A8;
+        padding: 10px 0 10px 0;
+    }
+    .select a {
+        text-decoration: none;
+    }
+    .select h1 {
+        color: color($colors, dark);
+        font-size: 18px;
+    }
+    .select h2 {
+        color: #969696;
+        font-size: 16px;
+        font-weight: 400;
+    }
     .cart {
         left: 0;
         bottom: 0px;
@@ -19,7 +80,7 @@ page-custom-item {
     }
     .cart > div {
         width: 35%;
-        padding: 2%;
+        padding: 4%;
         background: #2cd456;
     }
     .cart > div > span {
