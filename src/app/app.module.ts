@@ -15,6 +15,7 @@ import { ChoosesComponent } from './../components/chooses/chooses';
 import { HotelItemsComponent } from './../components/hotel-items/hotel-items';
 import { CartPage } from './../pages/cart/cart';
 import { FavResPage } from './../pages/fav-res/fav-res';
+import { CustomItemPage } from '../pages/custom-item/custom-item';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -38,7 +39,8 @@ import { Keyboard } from '@ionic-native/keyboard';
     ChoosesComponent,
     HotelItemsComponent,
     CartPage,
-    FavResPage
+    FavResPage,
+    CustomItemPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +58,8 @@ import { Keyboard } from '@ionic-native/keyboard';
     QrCodePage,
     EnterPinPage,
     CartPage,
-    FavResPage
+    FavResPage,
+    CustomItemPage
   ],
   providers: [
     StatusBar,

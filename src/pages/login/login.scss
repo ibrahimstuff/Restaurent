@@ -81,7 +81,8 @@ page-login {
 #login:after {
     content: "";
     display: block;
-    background: rgba(0,0,0,0.8);
+    background: linear-gradient(-180deg, #31516F 24%, #131F30 100%);
+    opacity: 0.9;
     width: 100%;
     height: 100%;
 }

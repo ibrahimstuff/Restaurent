@@ -1,0 +1,37 @@
+page-custom-item {
+    .close {
+        margin-left: 5px;
+        font-size: 20px;
+      }
+    .cart {
+        left: 0;
+        bottom: 0px;
+        position: fixed;
+        z-index: 10;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        opacity: 1;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .cart > div {
+        width: 35%;
+        padding: 2%;
+        background: #2cd456;
+    }
+    .cart > div > span {
+        display: block;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .cart > button {
+        width: 65%;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 700;
+        background: color($colors, secondary);
+    }
+}

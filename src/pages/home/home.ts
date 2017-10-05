@@ -12,7 +12,6 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  QRCodePage = QrCodePage;
   EnterPinPage = EnterPinPage;
   constructor(public navCtrl: NavController,private barcodeScanner: BarcodeScanner) {
 

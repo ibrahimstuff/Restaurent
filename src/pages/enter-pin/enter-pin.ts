@@ -1,7 +1,8 @@
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Keyboard } from '@ionic-native/keyboard';
+// import { Keyboard } from '@ionic-native/keyboard';
 import { QrCodePage } from '../hotel-choose/hotel-choose';
+import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the EnterPinPage page.
@@ -19,8 +20,8 @@ export class EnterPinPage implements AfterViewInit{
   test = null;
   @ViewChild('numval') vc;
   tabBarEle : any;
-
-  constructor(public navCtrl: NavController, public navParams: NavParams,private keyboard: Keyboard ) {
+key: any;
+  constructor(public navCtrl: NavController, public navParams: NavParams ) {
     this.tabBarEle = document.querySelector('.tabbar.show-tabbar');
   }
 
@@ -65,6 +66,9 @@ export class EnterPinPage implements AfterViewInit{
     console.log(tb.target.value.length)
     if (tb.target.value.length >= 1)
       document.getElementById(tb.target.id + 1).focus();
+    }
+    gotoHome() {
+      this.navCtrl.pop();
     }
   }
 
