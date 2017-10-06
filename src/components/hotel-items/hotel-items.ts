@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { CustomItemPage } from '../../pages/custom-item/custom-item';
+
 
 /**
  * Generated class for the HotelItemsComponent component.
@@ -17,10 +18,15 @@ export class HotelItemsComponent {
   items: any;
   Breakfast: boolean;
   Lunch: boolean;
+  Dinner: boolean;
+  Snacks: boolean;
+
 
   constructor(private navctrl: NavController) {
     this.Breakfast = true;
     this.Lunch = false;
+    this.Dinner = false;
+    this.Snacks = false;
     this.items = [{
       img: "assets/img/burger.png",
       name: "Mutton Fried Burger",
@@ -63,18 +69,35 @@ export class HotelItemsComponent {
       price: "13",
       custom: true
     }
-  ]
+  ];
+  
   }
-
+ 
   custom() {
     this.navctrl.push(CustomItemPage);
   }
   breakfast() {
-    this.Breakfast = false;
-    this.Lunch = true;
+    this.Breakfast = true;
+    this.Lunch = false;
+    this.Dinner = false;
+    this.Snacks = false;
   }
   lunch() {
     this.Lunch = true;
     this.Breakfast = false;
+    this.Dinner = false;
+    this.Snacks = false;
+  }
+  dinner() {
+     this.Dinner = true;
+     this.Breakfast = false;
+     this.Lunch = false;
+     this.Snacks = false;
+  }
+  snacks() {
+    this.Snacks = true;
+    this.Lunch = false;
+    this.Breakfast = false;
+    this.Dinner = false;
   }
 }

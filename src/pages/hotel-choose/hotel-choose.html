@@ -1,13 +1,14 @@
 <ion-header hide-tabs>
-
+  
   <ion-navbar color="primary">
     <ion-title>McDonalds</ion-title>
   </ion-navbar>
-
+  
 </ion-header>
 
 
-<ion-content>
+<ion-content (ionScroll)="scrollHandler($event)">
+  <ion-scroll></ion-scroll>
   <img src="assets/img/mc.jpg" alt="MC" class="hotel-image"/>
   <div [hidden]="booking">
     <chooses (Booking)="booking=$event"></chooses>
@@ -22,4 +23,5 @@
     </div>
     <button (click)="goCart()">VIEW CART</button>
   </div>
+
 </ion-content>

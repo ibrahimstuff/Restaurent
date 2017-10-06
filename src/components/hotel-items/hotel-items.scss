@@ -21,6 +21,7 @@ hotel-items {
         padding: 0px;
         text-align: center;
         border-bottom: 1px solid #C2C2C2;
+        z-index:100;
     }
     li {
         list-style: none;
@@ -40,6 +41,11 @@ hotel-items {
         border-bottom: 2px solid #6038cc;
         font-weight: 500;
     }
+    @media screen and (max-width: 374px) {
+        .item-img {
+            width: 15% !important;
+        }
+    }
     .items-list {
         background-color: #f2f2f2;
         width: 100%;
@@ -51,6 +57,7 @@ hotel-items {
     }
     .name {
         display: inline-block;
+        font-size: 1em;
     }
     .custom {
         display: inline-block;
@@ -64,7 +71,7 @@ hotel-items {
         color: #ff792e;
         text-decoration: none;
         vertical-align: middle;
-        font-size: 14px;
+        font-size: 0.7em;
         display: block;
         padding-top: 4px;
     }
@@ -81,5 +88,13 @@ hotel-items {
         font-weight: 600;
         font-size: 18px;
         color: color($colors, dark);
+    }
+    .items-list > div {
+        -webkit-animation: slideDownSmooth ease 1;
+        animation: slideDownSmooth ease 1;
+        -webkit-animation-fill-mode: backwards;
+        animation-fill-mode: backwards;
+        -webkit-animation-duration: 750ms;
+        animation-duration: 750ms;
     }
 }

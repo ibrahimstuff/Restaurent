@@ -1,9 +1,10 @@
+<ion-scroll></ion-scroll>
 <div class="hotels">
-<ul>
-  <li><a href="#" class="active" (click)="breakfast()">Breakfast</a></li>
-  <li><a href="#" (click)="lunch()">Lunch</a></li>
-  <li><a href="#">Dinner</a></li>
-  <li><a href="#">Snacks</a></li>
+<ul class="nav">
+  <li><a href="#" [ngClass]="{'active': Breakfast}" (click)="breakfast()">Breakfast</a></li>
+  <li><a href="#" [ngClass]="{'active': Lunch}" (click)="lunch()">Lunch</a></li>
+  <li><a href="#" [ngClass]="{'active': Dinner}" (click)="dinner()" >Dinner</a></li>
+  <li><a href="#" [ngClass]="{'active': Snacks}" (click)="snacks()">Snacks</a></li>
 </ul>
 <div class="items-list">
   <div [hidden]="!Breakfast">
@@ -34,5 +35,33 @@
           </ion-item>
         </ion-card>
       </div>
+      <div [hidden]="!Dinner">
+          <ion-card *ngFor="let item of items; let i=index">
+            <ion-item>
+              <img class="item-img" [src]="item.img" alt="img" item-left/>
+              <h2 class="name">{{item.name}}</h2>
+              <a href="#" *ngIf="item.custom" class="custom" (click)="custom()">Customize</a>
+              <a href="#" class="add">
+                <span>Add </span>
+                <img src="assets/img/add.png"/>
+                <span class="price">${{item.price}}</span>
+              </a>
+            </ion-item>
+          </ion-card>
+        </div>
+        <div [hidden]="!Snacks">
+            <ion-card *ngFor="let item of items; let i=index">
+              <ion-item>
+                <img class="item-img" [src]="item.img" alt="img" item-left/>
+                <h2 class="name">{{item.name}}</h2>
+                <a href="#" *ngIf="item.custom" class="custom" (click)="custom()">Customize</a>
+                <a href="#" class="add">
+                  <span>Add </span>
+                  <img src="assets/img/add.png"/>
+                  <span class="price">${{item.price}}</span>
+                </a>
+              </ion-item>
+            </ion-card>
+          </div>
 </div>
 </div>

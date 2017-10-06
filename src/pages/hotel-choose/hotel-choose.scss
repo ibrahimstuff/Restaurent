@@ -36,4 +36,12 @@ page-qr-code {
         font-weight: 700;
         background: color($colors, secondary);
     }
+    .fixed-header {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 44px;
+        border-top: 0;
+        background: #ffffff;
+      }
 }
