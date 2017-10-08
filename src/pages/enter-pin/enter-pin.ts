@@ -2,7 +2,6 @@ import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 // import { Keyboard } from '@ionic-native/keyboard';
 import { QrCodePage } from '../hotel-choose/hotel-choose';
-import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the EnterPinPage page.

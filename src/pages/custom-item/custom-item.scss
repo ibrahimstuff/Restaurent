@@ -89,10 +89,11 @@ page-custom-item {
         font-weight: 500;
     }
     .cart > button {
-        width: 65%;
+        width: 100%;
         color: #FFFFFF;
         font-size: 18px;
         font-weight: 700;
+        padding: 4%;
         background: color($colors, secondary);
     }
 }

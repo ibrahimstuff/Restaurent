@@ -22,7 +22,7 @@
     <h1>please select</h1>
     <ul>
       <li>
-        <a href="#">
+        <a href="#" (click)="openModal()">
           <h1>Choose your Bread</h1>
           <h2>Flat Bread</h2>
         </a>
@@ -58,9 +58,9 @@
     </ul>
   </div>
   <div class="cart">
-    <div class="total">
-      <span>CANCEL</span>
-    </div>
-    <button (click)="goCart()">ADD TO CART</button>
+    <!-- <div class="total">
+      <span (click)="gotoHome()">CANCEL</span>
+    </div> -->
+    <button (click)="gotoHome()">ADD TO CART</button>
   </div>
 </ion-content>

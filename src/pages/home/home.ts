@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { QrCodePage } from '../hotel-choose/hotel-choose';
 import { EnterPinPage } from '../enter-pin/enter-pin';
 import { FavResPage } from '../fav-res/fav-res';
 // import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';

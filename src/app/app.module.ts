@@ -16,6 +16,7 @@ import { HotelItemsComponent } from './../components/hotel-items/hotel-items';
 import { CartPage } from './../pages/cart/cart';
 import { FavResPage } from './../pages/fav-res/fav-res';
 import { CustomItemPage } from '../pages/custom-item/custom-item';
+import { BreadPage } from '../pages/bread/bread';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -40,7 +41,8 @@ import { Keyboard } from '@ionic-native/keyboard';
     HotelItemsComponent,
     CartPage,
     FavResPage,
-    CustomItemPage
+    CustomItemPage,
+    BreadPage
   ],
   imports: [
     BrowserModule,
@@ -59,7 +61,8 @@ import { Keyboard } from '@ionic-native/keyboard';
     EnterPinPage,
     CartPage,
     FavResPage,
-    CustomItemPage
+    CustomItemPage,
+    BreadPage
   ],
   providers: [
     StatusBar,

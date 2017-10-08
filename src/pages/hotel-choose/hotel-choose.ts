@@ -1,5 +1,5 @@
-import { Component, NgZone } from '@angular/core';
-import { IonicPage, NavController, NavParams, Scroll } from 'ionic-angular';
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CartPage } from './../cart/cart';
 import * as $ from 'jquery';
 
@@ -16,7 +16,7 @@ export class QrCodePage {
   public scrollAmount = 0;
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private zone: NgZone) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.tabBarEle = document.querySelector('.tabbar.show-tabbar');
     
   }
